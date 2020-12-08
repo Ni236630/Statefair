@@ -1,3 +1,5 @@
+
+
 const contentTarget = document.querySelector(".entry")
 const eventHub = document.querySelector("#state-fair")
 export const TicketBooth = () => {
@@ -13,6 +15,9 @@ export const TicketBooth = () => {
     </div>
     <div class="ticketBooth">
     <button id="sideshowTicket">Sideshow Ticket</button>
+    </div>
+    <div class="ticketBooth">
+    <button id="bigSpender">Big Spender Ticket</button>
     </div>
     `
 }
@@ -45,6 +50,11 @@ eventHub.addEventListener("click", clickEvent =>{
             
             eventHub.dispatchEvent(sideshowEvent)
            
+        }else if (clickEvent.target.id === "bigSpender"){
+            
+            const bigSpenderEvent = new CustomEvent("bigSpenderTicketPurchased")
+            
+            eventHub.dispatchEvent(bigSpenderEvent)
         }
     
     

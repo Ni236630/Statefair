@@ -1,3 +1,4 @@
+import { bigSpenderTicketHolder } from "./bigSpender/bigSpenderTicketholder.js";
 import { foodTicketHolders } from "./food/foodTicketHolder.js";
 import { gameTicketholders } from "./games/gameTicketHolders.js";
 import { RideTicketHolders } from "./rides/RideTicketHolders.js";
@@ -9,3 +10,4 @@ RideTicketHolders();
 foodTicketHolders();
 gameTicketholders();
 sideshowTicketholder();
+bigSpenderTicketHolder();
